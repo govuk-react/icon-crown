@@ -1,33 +1,30 @@
 {
   "name": "@govuk-react/icon-crown",
-  "version": "0.0.8",
-  "description": "GOV.UK Crown icon as a React component",
-  "main": "lib/index.js",
-  "module": "es/index.js",
-  "source": "src/index.js",
-  "scripts": {
-    "build": "npm run build:lib && npm run build:es",
-    "build:lib": "rimraf lib && babel src -d lib --source-maps",
-    "build:es": "rimraf es && cross-env BABEL_ENV=es babel src -d es --source-maps"
+  "version": "0.2.0",
+  "description": "The GOV.UK crown and logotype as React components, matching govuk-frontend",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
   },
-  "devDependencies": {
-    "@babel/cli": "7.17.10",
-    "@babel/core": "7.17.10",
-    "@babel/plugin-transform-runtime": "7.17.10",
-    "@babel/preset-env": "7.17.10",
-    "@babel/preset-react": "7.16.7",
-    "babel-plugin-add-module-exports": "^1.0.4",
-    "cross-env": "^7.0.3",
-    "rimraf": "^3.0.2"
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm --dts --clean",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
   },
   "author": "Alasdair McLeay",
-  "directories": {
-    "lib": "lib"
-  },
-  "files": ["lib", "es"],
-  "peerDependencies": {
-    "react": ">=16.2.0"
-  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/penx/govuk-react-icon-crown.git"
@@ -35,5 +32,25 @@
   "bugs": {
     "url": "https://github.com/penx/govuk-react-icon-crown/issues"
   },
-  "homepage": "https://github.com/penx/govuk-react-icon-crown#readme"
+  "homepage": "https://github.com/penx/govuk-react-icon-crown#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "react": ">=19"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "domhandler": "^6.0.1",
+    "govuk-frontend": "6.6.0",
+    "htmlparser2": "^12.0.0",
+    "prettier": "^3.10.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tsup": "^9.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
 }
