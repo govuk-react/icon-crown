@@ -1,8 +1,6 @@
 /*!
- * SPDX-License-Identifier: MIT
+ * Crown Copyright
  * Copyright (C) 2017 Crown Copyright (Government Digital Service)
- * The crown and logotype artwork come from govuk-frontend 6.6.0 (macros/logo.njk), released under the MIT License.
- * The GOV.UK crown and logotype are protected marks, and their use may be restricted.
  */
 import type { ComponentProps } from 'react';
 

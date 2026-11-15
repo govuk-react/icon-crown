@@ -24,7 +24,6 @@
     "prepublishOnly": "npm run build"
   },
   "author": "Alasdair McLeay",
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/penx/govuk-react-icon-crown.git"
