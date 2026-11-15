@@ -17,4 +17,4 @@ ESM only, React 19 or later.
 
 ## Licence
 
-MIT, © Crown copyright (Government Digital Service), as govuk-frontend. See [LICENSE.txt](LICENSE.txt). The GOV.UK crown and logotype are protected marks, and their use may be restricted.
+© Crown copyright. See [LICENSE.txt](LICENSE.txt).
