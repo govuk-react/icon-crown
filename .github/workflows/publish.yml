@@ -21,4 +21,4 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
-      - run: npm stage publish --access public
+      - run: npm stage publish --access public --tag "$(node -p "require('./package.json').version.split('-')[1]?.split('.')[0] ?? 'latest'")"
