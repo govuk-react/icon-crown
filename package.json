@@ -26,12 +26,12 @@
   "author": "Alasdair McLeay",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/penx/govuk-react-icon-crown.git"
+    "url": "git+https://github.com/govuk-react/icon-crown.git"
   },
   "bugs": {
-    "url": "https://github.com/penx/govuk-react-icon-crown/issues"
+    "url": "https://github.com/govuk-react/icon-crown/issues"
   },
-  "homepage": "https://github.com/penx/govuk-react-icon-crown#readme",
+  "homepage": "https://github.com/govuk-react/icon-crown#readme",
   "engines": {
     "node": ">=20"
   },
