@@ -1,6 +1,6 @@
 # @govuk-react/icon-crown
 
-The GOV.UK crown and logotype as React components. They render the same SVG as govuk-frontend 6.6.0's logo, so they slot into the classes of [govuk-frontend-react](https://github.com/penx/govuk-frontend-react) components, which ship no Crown copyright artwork themselves.
+The GOV.UK crown and logotype as React components. They render the same SVG as govuk-frontend 6.6.0's logo, so they slot into the classes of [govuk-frontend-react](https://github.com/govuk-react/govuk-frontend-react) components, which ship no Crown copyright artwork themselves.
 
 ```tsx
 import { Crown, Logo } from '@govuk-react/icon-crown';
