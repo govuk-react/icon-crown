@@ -24,6 +24,7 @@
     "prepublishOnly": "npm run build"
   },
   "author": "Alasdair McLeay",
+  "license": "SEE LICENSE IN LICENSE.txt",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/govuk-react/icon-crown.git"
