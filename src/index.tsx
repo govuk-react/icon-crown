@@ -1,6 +1,6 @@
 /*!
  * Crown Copyright
- * Copyright (C) 2017 Crown Copyright (Government Digital Service)
+ * Copyright (C) Crown Copyright (Government Digital Service)
  */
 import type { ComponentProps } from 'react';
 
